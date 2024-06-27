@@ -196,7 +196,6 @@ def checkSecuritytxt(url, session):
                         print(f"[+] Found an exposed security.txt: {to_check}")
                         print(text)
                         return True
-                    return True
         except requests.exceptions.Timeout:
             # Timeouts if the request takes longer than X seconds
                 print("Timeout error")
